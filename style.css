@@ -1,0 +1,110 @@
+*{
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;;
+}
+
+
+
+.title h2{
+    font-size: 2rem;
+    letter-spacing: 0.25rem;
+    text-transform: capitalize;
+    margin-bottom: 0.75rem;
+}
+
+.underline{
+    width: 5rem;
+    height: 0.25rem;
+    background: gold;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.title{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.btn-container{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4rem;
+}
+
+.btn {
+    border-color: gold;
+    text-transform: capitalize;
+    border-radius: 0.5rem;
+    padding: 0.5rem 0.75rem;
+    cursor: pointer;
+    margin: 0 0.5rem;
+    letter-spacing: 1px;
+    font-size: 1rem;
+}
+
+.content{
+    width: 95vw;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
+    max-width: 1170px;
+    display: grid;
+    gap: 3rem 2rem;
+    justify-items: space-between;
+}
+.text{
+    display: block;
+}
+
+h4{
+    text-transform: capitalize;
+    letter-spacing: 0.25rem;
+}
+
+
+.item{
+    grid-template-columns: 225px 1fr;
+    gap: 0 1.25rem;
+    max-width: 40rem;
+    display: grid;
+}
+.item img{
+    object-fit: cover;
+    height: 150px;
+}
+.item-info{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 0.5px dotted #222;
+}
+h4{
+    text-transform: capitalize;
+    line-height: 1.25;
+    margin-bottom: 0.75rem;
+    letter-spacing: 0.25rem;
+}
+.block-container{
+    display: block;
+    width: 80%;
+}
+.price{
+    color: gold;
+}
+.btn-container button:hover{
+    background-color: aqua;
+}
+@media screen and (min-width: 700px)
+{
+    .item {
+        gap: 0 1.25rem;
+        max-width: 40rem;
+    }
+
+    .item-img{
+        width: 225px;
+        height: 175px;
+        object-fit: cover;
+        border: 0.25rem solid gold;
+        border-radius: 0.5rem;
+    }
+
+}
